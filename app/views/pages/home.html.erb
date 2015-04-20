@@ -1,3 +1,8 @@
+ <% if user_signed_in? %>
+
+<h1> Welcome member  </h1> 
+
+ <% else %>
 
 <div class="jumbotron">
 
@@ -11,7 +16,8 @@
 
 <p>
 	
-	<%= link_to "Sign up Now!", "#", class: "btn btn-success btn-lg" %>
+	<%= link_to "Sign up Now!", new_user_registration_path, class: "btn btn-success btn-lg" %>
 </p>
 
 </div> 
+<% end %>
