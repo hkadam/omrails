@@ -21,3 +21,6 @@ doc/
 .DS_Store
 .idea
 
+# Ingnore Paperclip uploaded files
+/public/system
+

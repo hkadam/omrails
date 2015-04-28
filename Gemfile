@@ -5,6 +5,8 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.0'
 gem 'devise'
 gem 'simple_form'
+gem "paperclip", "~> 4.2"
+
 
 # Use sqlite3 as the database for Active Record
 group  :production  do

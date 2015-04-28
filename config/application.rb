@@ -21,6 +21,7 @@ module Omrails
     # config.i18n.default_locale = :de
     #On config/application.rb forcing your application to not access the DB
      #or load models when precompiling your assets.
+     #Paperclip.options[:command_path] = "/usr/local/bin/identify"
     config.assets.initialize_on_precompile = false
   end
 end

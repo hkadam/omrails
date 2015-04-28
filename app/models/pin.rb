@@ -1,8 +1,22 @@
 class Pin < ActiveRecord::Base
 	validates :description, presence: true
+  validates :user_id, presence: true
+  has_attached_file :image
+ 
+ 
+  
+  has_attached_file :image, styles: { medium: "320x240>", large: "960x640>" }
+  validates_attachment :image, presence: true,
+                               content_type: { content_type: ['image/jpeg', 'image/jpg', 'image/png', 'image/gif']},
+                               size: { less_than: 5.megabytes }
 
 	belongs_to :user
-	validates :user_id, presence: true
+# has_attached_file :attachment  styles: { thumb: '120x120', medium: '300x300' }
+	
+	#has_attached_file :image, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "/images/:style/missing.png"
+	
+	
+	
 
 
 end
