@@ -5,7 +5,7 @@ before_action :authenticate_user!, except: [:index, :show]
   # GET /pins
   # GET /pins.json
   def index
-    @pins = Pin.all
+    @pins = Pin.order("created_at desc")
   end
 
   # GET /pins/1
