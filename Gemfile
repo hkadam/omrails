@@ -6,7 +6,9 @@ gem 'rails', '4.1.0'
 gem 'devise'
 gem 'simple_form'
 gem "paperclip", "~> 4.2"
-gem 'aws-sdk'
+gem 'aws-sdk-v1'
+#gem 'aws-sdk'
+gem 'fog'
 
 # Use sqlite3 as the database for Active Record
 group  :production  do
