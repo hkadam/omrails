@@ -8,6 +8,9 @@ gem 'simple_form'
 gem "paperclip", "~> 4.2"
 gem 'aws-sdk-v1'
 #gem 'aws-sdk'
+gem 'will_paginate'
+gem 'will_paginate-bootstrap'
+gem 'bootstrap-will_paginate'
 gem 'fog'
 
 # Use sqlite3 as the database for Active Record
